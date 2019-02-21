@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+/*顶部nav*/
+#topceiling{
+	width: 100%;
+}
+.head{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+	border-bottom: 1px black solid;
+	padding: 15px 0 ;
+	
+}
+.head span{
+	float: right;
+	font-size: 10px;
+	line-height: 40px;
+}
+.headlogo{
+	float: left;
+	width: 187px;
+	height: 40px;
+	background: url(img/logo_new.jpg)no-repeat center;
+	background-size: contain;
+}
+#content{
+	width: 100%;
+}
+#wrapper{
+	width: 1200px;
+	height: 474px;
+	/*background: bisque;*/
+	margin: 50px auto;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.logowar{
+	width: 400px;
+	height: 25px;
+	/*background: yellow;*/
+	position: absolute;
+	right: 100px;
+}
+.logowar>strong{
+	float: left;
+	font-size: 23px;
+	color: #979797;
+}
+.logowar>span{
+	float: right;
+	margin-right: 28px;	
+	font-size: 14px;
+	line-height: 25px;
+	position: relative;
+	color: #979797;
+}
+.logowar>a{
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	line-height: 25px;
+	text-decoration: none;
+	color: #b42025;
+}
+.login{
+	width: 400px;
+	height: 35px;
+	/*background: green;*/
+	position: absolute;
+	right: 100px;
+	top: 50px;
+}
+.logul{
+	width: 400px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 14px;
+}
+.logul>li{
+	width: 198px;
+	height: 33px;
+	/*background: blue;*/
+	float: left;
+	border: 1px solid #cbcbcb;
+	color: #656565;
+}
+.logul>li:nth-child(1){
+	background: red;
+	color: white;
+	font-weight: 1000;
+}
+.register{
+	position: absolute;
+	right: 100px;
+	width: 398px;
+	height: 360px;
+	/*background: hotpink;*/
+	top: 85px;
+	border: 1px solid #fff ;
+}
+.inp1{
+	margin:30px 20px 20px;
+	width: 360px;
+	height: 45px;
+	background: #fff;
+	text-indent: 10px;
+}
+.inp2{
+	margin:0px 20px 30px;
+	width: 360px;
+	height: 45px;
+	background: #fff;
+	text-indent: 10px;
+}
+.register strong{
+	float: right;
+	font-size: 14px;
+	color: red;
+	margin-right: 18px;
+}
+.inp3{
+	width: 360px;
+	height: 45px;
+	font-size: 23px;
+	border: none;
+	margin:10px 22px 5px 20px;
+	background: red;
+	color: white;
+}
+.inp3:hover{
+	font-size: 24px;
+	color: whitesmoke;
+	font-weight: 1000px;
+}
+.rigpho{
+	width: 465px;
+	height: 352px;
+	background: url(img/login120412_newlogo.jpg)no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 50px;
+	left: 120px;
+	
+}
+.inp4{
+	width: 360px;
+	height: 45px;
+	font-size: 23px;
+	border: none;
+	margin:0px 20px 0px 20px;
+	background: red;
+	color: white;
+}

@@ -1,0 +1,355 @@
+·<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="tools.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			#car{
+				width: 100%px;
+			}
+			
+			.head{
+				width: 980px;
+				height: 55px;
+				margin: 0 auto;
+				border-bottom: 1px solid #9A9A9A;
+				/*background: red;*/
+				position: relative;
+			}
+			.headright{
+				float: right;
+				margin-top: 18px;
+				/*background: yellow;*/
+			}
+			.headright p{
+				float: right;
+				font-size: 12px;
+			}
+			.p1{
+				margin-right: 20px;
+				padding-left: 10px;
+				border-left: 1px solid #808080;
+			}
+			.p2{
+				padding-right: 10px;
+			}
+			.headright span{
+				float: right;
+				margin-right: 10px;
+				font-size: 12px;
+			}
+			.headleft{
+				position: absolute;
+				bottom: 0;left: 0;
+				width: 311px;
+				height: 39px;
+				background: url(img/vancl-logo.png)no-repeat center;
+				background-size: cover;
+				cursor: pointer;
+			}
+			.centen{
+				width: 980px;
+				margin: 0 auto;
+			}
+			.warp{
+				width: 540px;
+				height: 28px;
+				font-size: 12px;
+				line-height: 28px;
+				margin-top: 10px;
+				background: url(img/newProm.jpg);
+			}
+			.warp span:nth-child(1){margin-left: 70px;}
+			.warp span:nth-child(2){margin-left: 75px;}
+			.warp span:nth-child(3){margin-left: 93px;}
+			.lelist{
+				width: 980px;
+				margin: 20px auto;
+				/*background: red;*/
+			}
+			.ceul{
+				width: 980px;
+				height: 30px;
+				float: left;
+				line-height: 30px;
+				/*background: red;*/
+			}
+			.ceul li{
+				width: 98px;
+				height: 30px;
+				float: left;
+				text-align: center;
+			}
+			
+			.box{
+				width: 980px;
+				height: 100px;
+				/*background: yellow;*/
+				/*margin-top: 30px;*/	
+			}
+			.list{
+				width: 980px;
+				height: 100px;
+				float: left;
+			}
+			.list li{
+				float: left;
+				width: 98px;
+				height: 100px;
+				text-align: center;
+				padding: 10px 0;
+				box-sizing: border-box;
+			}
+			.clearbox{
+				width: 980px;
+				height: 150px;
+				background: #C0C0C0;
+				margin: 100px auto;
+				border-radius: 10px;
+				position: relative;
+				transition: 0.2s;
+				border: 1px solid saddlebrown;
+				
+			}
+			.clearbox:hover{
+				/*background: green;*/
+				box-shadow: 2px 2px 10px #008000;
+			}
+			.botttombox{
+				width: 160px;
+				height: 50px;
+				background: url(img/newpromotion.jpg)no-repeat 0px 0px;
+				background-size: 500px 80px;
+				position: absolute;
+				top: 0;bottom: 0;
+				left: 50px;
+				margin: auto;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 50px;
+				cursor: pointer;
+			}
+			.botttombox span{
+				color: white;
+				font-weight: 700;
+				font-size: 22px;
+			}
+			.gobox{
+				position: absolute;
+				left: 250px;
+				top: 0;bottom: 0;
+				margin: auto;
+				width: 122px;
+				height: 37px;
+				background: white;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 37px;
+				cursor: pointer;
+				
+			}
+			.lj{
+				position: absolute;
+				right: 0;bottom: 0;top: 0;
+				margin: auto;
+				width: 150px;
+				height: 30px; 	
+				line-height: 30px;
+			}
+			.ljp{
+				float: left;
+				margin: 0 10px 0 10px;
+			}
+			.ljj{
+				width: 200px;
+				height: 30px;
+				position: absolute;
+				right: 0;
+				bottom: 20px;
+				line-height: 30px;
+			}
+			.checked{
+				position: absolute;
+				right: 200px;
+				top: 0;bottom: 0;
+				margin: auto;
+				width: 50px;
+				height: 20px;
+				cursor: pointer;
+			}
+			.checked:hover{
+				color: red;
+				
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="car">
+			<div class="head">
+				<div class="headleft">
+					
+				</div>
+				<div class="headright">
+					<p class="pp">帮助中心</p>
+					<p class="p1">登陆</p>
+					<p class="p2">注册</p>
+					<span>您好，欢迎光临凡客诚品</span>
+				</div>
+			</div>
+			<div class="centen">
+				<div class="warp">
+					<span>1.我的购物车</span>
+					<span>2.填写核对信息单</span>
+					<span>3.成功提交订单</span>
+				</div>
+			</div>
+			<div class="lelist">
+				<ul class="ceul">
+					<li></li>
+					<li>商品名称</li>
+					<li>尺寸</li>
+					<li>单价</li>
+					<li>数量</li>
+					<li>颜色</li>
+					<li>库存</li>
+					<li>
+						全选
+						<input class="ccc" type="checkbox" name="" id="" value="" />
+					</li>
+					<li>操作</li>
+					<li></li>
+				</ul>
+			</div>
+			
+			<div class="clearbox">
+				<div class="botttombox">
+					<span>去结算</span>
+				</div>
+				<div class="gobox">
+					<span><<继续购物</span>
+				</div>
+				
+				<div class="lj">
+					<span class="ljp"></span>
+				</div>
+				<div class="ljj">
+					
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".headleft").on('click',function(){
+			location.href="index.html"
+		})
+		
+		$('.gobox').on('click',function(){
+			location.href="index.html"
+		})
+		
+		
+//		console.log($(".ccc"))	
+		
+        console.log(localStorage)
+        var str="",total=0,momm=0,money=0;
+		for(k in localStorage){
+			if(localStorage.hasOwnProperty(k)&&k!="nowuser"){
+			    var perinfo = JSON.parse(localStorage[k]);
+			    console.log(perinfo);//每一条数据
+			    console.log(k)
+			    
+				str+= "<div class='box'>"
+						+  "<ul class='list'>"
+							+	"<li style='background:url("+perinfo.img+") no-repeat center;background-size:cover;'></li>"
+							+	"<li><span>"+perinfo.name+"</span></li>"
+							+	"<li>"+perinfo.size+"</li>"
+							+	"<li>"+perinfo.money+"</li>"
+							+	"<li>"+perinfo.many+"</li>"
+							+	"<li>"+perinfo.color+"</li>"
+							+	"<li>"+perinfo.kc+"</li>"
+							+	"<li><input class='cc' type='checkbox' name='' id='' value='' /></li>"
+							+	"<li><span class='sp'>删除</span></li>"
+							+	"<li><span>收藏</span></li>"
+						+	"</ul>"
+						+"</div>"	
+				total+=Number(perinfo.many);
+				momm+=Number(perinfo.money);
+				money+=Number(perinfo.money)*Number(perinfo.many)
+			}
+		}
+//		$(".ljp").text("数量总计："+total+"件")
+//		$(".ljj").text("总计金额："+money+"元")
+		
+		$(".ljj").text("总计金额："+0+"元")
+		$(".ljp").text("数量总计："+0+"件")
+				
+		$(".lelist").html(function(ind, oldv) {
+	return oldv + str;
+})
+
+
+
+
+
+$(".cc").on("change",function(){
+	var zje=0, zsl=0;
+	for (var s = 0; s< $(".cc").length;s++) {
+		if($(".cc")[s].checked){
+			console.log($(this))
+			var sl=Number($(".cc").eq(s).closest("ul").children("li").eq(4).html())
+			var qian=Number($(".cc").eq(s).closest("ul").children("li").eq(3).html())
+			zje += sl*qian 
+			zsl +=sl;
+//			console.log(sl);
+//			console.log(zsl);
+		}
+	}
+	$('.sp').on('click',function(){
+		console.log($(this).closest("ul").find("input")[0].checked)
+		if($(this).closest("ul").find("input")[0].checked==true){
+			$(this).closest("ul").remove()
+		}
+		
+	})
+	
+	$(".ljj").text("总计金额："+zje+"元")
+	$(".ljp").text("数量总计："+zsl+"件")
+})
+
+$(".ccc").on("change",function(){
+			console.log($(this)[0].checked);
+			if($(this)[0].checked==true){
+				for(var m=0;m<$(".cc").length;m++){
+					$(".cc")[m].checked=true
+						if($(".cc")[m].checked==true){
+							$(".ljp").text("数量总计："+total+"件");
+							$(".ljj").text("总计金额："+money+"元");
+						}else{
+							$(".ljj").text("总计金额："+0+"元")
+							$(".ljp").text("数量总计："+0+"件")
+						}
+				}
+			}else{
+				for(var m=0;m<$(".cc").length;m++){
+					$(".cc")[m].checked=false;
+					$(".ljj").text("总计金额："+0+"元")
+					$(".ljp").text("数量总计："+0+"件")
+				}
+			}
+})
+		
+		
+		
+	</script>
+</html>
